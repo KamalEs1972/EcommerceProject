@@ -768,8 +768,8 @@ public class Action extends BaseClass implements ActionInterface {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "\\ScreenShots\\" + filename + "_" + dateName + ".png";
-
+		String destination = System.getProperty("user.dir") + "\\http://localhost:8080/job/MyStoreProject1x/ws/MyStoreProject1x/ScreenShots//" + filename + "_" + dateName + ".png";
+			//ScreenShots
 		try {
 			FileUtils.copyFile(source, new File(destination));
 		} catch (Exception e) {
